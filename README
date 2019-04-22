@@ -25,7 +25,7 @@ desired behavior/tests). A few commands must be only run after others; if this i
 these instructions are explicitly defined within the program. Otherwise, no other changes 
 to the program need to be made in order to run properly. 
 ————————————————————————————————————————————
-<br>thesis_data_final.py</br>
+thesis_data_final.py
 This program was used for the following purposes:
 - Renaming the Male and Female blog files and converting from XML to text file formats
 - Scraping hyperlinks and extracting Non-Binary online article data from the Beyond the Binary website
