@@ -14,7 +14,16 @@ Most importantly, all data files must be downloaded. This includes the Male/Fema
 data, as well as the Non-Binary data. The non-binary data is located in the "nonbin.zip"
 folder in this repository. There are 222 individual article files, as well as another 
 version of the data with all texts from a given author combined into a single file 
-(189 total files). Further, all test files must be kept in a separate folder, and the 
+(189 total files). 
+
+******* DISCLAIMER *******
+All non-binary data was taken from the Beyond the Binary website (http://beyondthebinary.co.uk/).
+This study extracted and consolidated the article data and has made this collection available
+for **educational purposes only**. I do not hold any responsibility or liability for others' 
+use or misuse of this data.
+**************************
+
+Further, all test files must be kept in a separate folder, and the 
 thesis_prelimdata.py and thesis_formal_v22.py files must be located in the same folder 
 as the test files. This is because these programs must be in the same directory in order 
 to access the pickled byte files, which are automatically stored in the same folder as the 
