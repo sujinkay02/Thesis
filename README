@@ -1,0 +1,36 @@
+Sujin Kay
+April 18, 2019
+Senior Thesis Program Instructions
+
+There are 4 separate programs that were built for the purposes of this study. All files are written in Python 3 (and thus can be run via the terminal using the command “python3 <filename>.py”.
+
+For all programs, there are clearly-labeled filepaths under the “MAIN” section header, where relevant data files are stored locally on my computer. These filepaths must be renamed in correspondence to the user’s folders and filepaths. 
+
+Most importantly, all data files must be downloaded. This includes the Male/Female blog data, as well as the Non-Binary data. This data is made available on Github (https://github.com/sujinkay02/Thesis). Further, all test files must be kept in a separate folder, and the thesis_prelimdata.py and thesis_formal_v22.py files must be located in the same folder as the test files. This is because these programs must be in the same directory in order to access the pickled byte files, which are automatically stored in the same folder as the test files. 
+
+Some tests and commands are commented out (can be uncommented depending on the user’s desired behavior/tests). A few commands must be only run after others; if this is the case, these instructions are explicitly defined within the program. Otherwise, no other changes to the program need to be made in order to run properly. 
+————————————————————————————————————————————
+thesis_data_final.py
+This program was used for the following purposes:
+- Renaming the Male and Female blog files and converting from XML to text file formats
+- Scraping hyperlinks and extracting Non-Binary online article data from the Beyond the Binary website
+- Performing text pre-processing (tokenizing into words, tagging Parts of Speech)
+- Selecting and concatenating training files and test files for Male, Female, and Non-Binary files
+————————————————————————————————————————————
+thesis_pickling_final.py
+This program was used to perform Python’s “pickling” (i.e., data serialization) on the Male/Female/Non-Binary text profiles, as well as the various n-gram data structures that were produced for each gender file. 
+————————————————————————————————————————————
+thesis_prelimdata.py
+This program was used to for the preliminary analysis and to gather the binary and non-binary gender classification accuracy results. 
+It includes the following:
+- Showing frequencies of the X most common words / chars / POS tags
+- Producing n-grams-based text profiles for each test file
+- Computing dissimilarity measures using the test files and gender files 
+- Computing the overall classification accuracy across n-grams sizes (n=1-5) and types (word, char, POS)
+————————————————————————————————————————————
+thesis_formal_v22.py
+This program was used to for the formal feature selection & extraction process, and to gather the non-binary gender classification accuracy results. 
+It includes the following:
+- Same as the the prelimdata file, but using a specified feature set 
+- Selects the top 3 most frequent words in each word category, to be included in the final feature set
+- Allows user to generate gender-specific classification testing / accuracies
